@@ -12,7 +12,7 @@
     <arg name="paused" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="headless" value="$(arg headless)"/>
-    <arg name="world_name" value="$(find doorManipulation)/worlds/door.sdf"/>
+    <arg name="world_name" value="$(find door_manipulation)/worlds/door.sdf"/>
   </include>
 
   <!-- Oh, you wanted a robot? -->
