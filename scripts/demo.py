@@ -158,14 +158,14 @@ class SensorClient:
             z = -matrix[:, 1]
             x = matrix[:, 2]
             plot = plt.scatter(x, z, s=1)
-            plt.show()
+            #plt.show()
             plot = plt.scatter(x, y, s=1)
-            plt.show()
+            #plt.show()
             plot = plt.scatter(y, z, s=1)
             # plt.xlim(-.1, .1)
             # plt.ylim(2.6, 2.8)
             # plt.rc('axes', axisbelow=True)
-            plt.show()
+            #plt.show()
             print(x.shape, z.shape)
             print("done")
             # Now, get the handle isolated and then find average location
