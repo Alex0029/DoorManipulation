@@ -1,6 +1,6 @@
 <launch>
   <!-- Drive to the table, pick stuff up -->
-  <node name="demo" pkg="door_manipulation" type=".py" output="screen" />
+  <node name="demo" pkg="door_manipulation" type="demo.py" output="screen" />
 
     Start navigation
   <include file="$(find fetch_gazebo_demo)/launch/fetch_nav.launch" />

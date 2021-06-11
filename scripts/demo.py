@@ -448,7 +448,7 @@ if __name__ == '__main__':
     start = 2 #starting position
     stepCount = 0
     while angle < endAngle:
-        #Begin moving through
+        #Begin moving through angles
         stepCount += 1
         x, y = rotate(origin, (x, y), step)
         angle += step*0.3
@@ -460,7 +460,8 @@ if __name__ == '__main__':
         gripper_pose_stamped.pose = pose
         move_group.moveToPose(gripper_pose_stamped, gripper_frame)
         result = move_group.get_move_action().get_result()
-        # rospy.sleep(.1)
+	# sleep, just to give sim time to catch up
+        rospy.sleep(.3)
         # If the step count reaches multiple of ten, move back to give more room for the door
         # and then re-grip the handle
         if stepCount % 10 == 0:
